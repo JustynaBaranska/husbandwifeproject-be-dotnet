@@ -51,6 +51,7 @@ app.MapPost("/Cards", async (Card card) =>
 .WithOpenApi();
 
 app.MapGet("/info", () => $"OK - {DateTime.UtcNow:s}");
+app.MapGet("/status", () => $"OK - {DateTime.UtcNow:s}");
 
 app.Run();
 
